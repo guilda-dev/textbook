@@ -1,0 +1,3 @@
+[submodule "guilda"]
+	path = guilda
+	url = https://github.com/guilda-dev/guilda.git
