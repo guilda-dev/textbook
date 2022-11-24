@@ -12,23 +12,23 @@
 ***
 
 ## __code_textbook内ファイル対応表__
-|codes_textbook|フォルダ内|電力テキスト|
+|フォルダ名|ファイル名|電力テキスト内のプログラム番号|
 |:----|:----|:----|
-|ex3.8|func_ex1.m|プログラム3-1|
+|example3.8|func_ex1.m|プログラム3-1|
 | |main_ex1.m|プログラム3-2|
-|ex3.9|func_ex2.m|プログラム3-3|
+|example3.9|func_ex2.m|プログラム3-3|
 | |main_ex2.m|プログラム3-4|
-|ex3.10|func_ex3.m|プログラム3-5|
+|example3.10|func_ex3.m|プログラム3-5|
 | |main_ex3.m|プログラム3-6|
-|ex3.11|bus_slack.m|プログラム3-7|
+|example3.11|bus_slack.m|プログラム3-7|
 | |bus_generator.m|プログラム3-8|
 | |bus_load.m|プログラム3-9|
 | |func_power_flow.m|プログラム3-10|
 | |main_ex4.m|プログラム3-11|
-|ex3.12|branch.m|プログラム3-12|
+|example3.12|branch.m|プログラム3-12|
 | |get_admittance_matrix.m|プログラム3-13|
 | |main_admittance.m|プログラム3-14|
-|ex3.13|calculate_power_flow.m|プログラム3-15|
+|example3.13|calculate_power_flow.m|プログラム3-15|
 | |main_power_flow.m|プログラム3-16|
 | |branch.m| |
 | |bus_generator.m| |
@@ -36,22 +36,22 @@
 | |bus_slack.m| |
 | |func_power_flow.m| |
 | |get_admittance_matrix.m| |
-|ex3.14|func_RLC_ode.m|プログラム3-17|
+|example3.14|func_RLC_ode.m|プログラム3-17|
 | |main_RLC_ode.m|プログラム3-18|
 | |func_RLC_dae.m|プログラム3-19|
 | |main_RLC_dae.m|プログラム3-20|
-|ex3.15|func_simulation_3bus.m|プログラム3-21|
+|example3.15|func_simulation_3bus.m|プログラム3-21|
 | |main_simulation_3bus_simple.m|プログラム3-22|
 | |branch.m| |
 | |get_admittance_matrix.m| |
-|ex3.16|generator.m|プログラム3-23|
+|example3.16|generator.m|プログラム3-23|
 | |load_impedance.m|プログラム3-24|
 | |func_simulation.m|プログラム3-25|
 | |simulate_power_system.m|プログラム3-26|
 | |main_simulation_3bus.m|プログラム3-27|
 | |branch.m| |
 | |get_admittance_matrix.m| |
-|ex3.17|generator.m|プログラム3-28|
+|example3.17|generator.m|プログラム3-28|
 | |load_impedance.m|プログラム3-29|
 | |main_simulation_3bus_equilibrium.m|プログラム3-30|
 | |branch.m| |
@@ -63,7 +63,7 @@
 | |func_simulation.m| |
 | |get_admittance_matrix.m| |
 | |simulate_power_system.m| |
-|ex3.18|func_simulation.m|プログラム3-31|
+|example3.18|func_simulation.m|プログラム3-31|
 | |simulate_power_system.m|プログラム3-32|
 | |main_simulation_3bus_fault.m|プログラム3-33|
 | |branch.m| |
@@ -75,7 +75,7 @@
 | |generator.m| |
 | |get_admittance_matrix.m| |
 | |load_impedance.m| |
-|ex3.19|generator.m|プログラム3-34|
+|example3.19|generator.m|プログラム3-34|
 | |load_impedance.m|プログラム3-35|
 | |func_simulation.m|プログラム3-36|
 | |simulate_power_system.m|プログラム3-37|
@@ -97,7 +97,7 @@
 
 
 ## __figure_textbook内ファイル対応表(準備中)__
-| ファイル名 | 教科書内の対応箇所 | 図表番号 |
+| ファイル名 | 電力テキスト内の対応箇所 | 図表番号 |
 | :--- | :---: | ---: |
 | example_2_3.m | 例2.3 | 図2.10, 図2.11, 図2.12 |
 | example_3_3.m | 例3.3 | 図3.2 |
