@@ -1,6 +1,6 @@
 close all; clear; clc;
-addpath_guilda
-addpath_figures_textbook
+operate_path('guilda');
+operate_path('figures_textbook');
 
 disp('生成したいグラフに対応する例や節の番号を入力してください');
 disp('  ex) 例2.3 → 2.3または2_3');

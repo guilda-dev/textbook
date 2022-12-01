@@ -1,4 +1,5 @@
 close all; clear; clc;
+operate_path('guilda', 'rm');
 
 disp('実行したいプログラムに対応する例の番号を入力してください');
 disp('  ex) プログラム3-1, 3-2（例3.8） → 3.8');
