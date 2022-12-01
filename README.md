@@ -3,8 +3,9 @@
 ## 目次
 - [本リポジトリの概要](#anchor1)
 - [各フォルダの内容](#anchor2)
-- [`"codes_textbook"`フォルダ内のファイル対応表](#anchor3)
-- [`"+figures_textbook"`フォルダ内のファイル対応表](#anchor4)
+- [各プログラムの実行方法](#anchor3)
+- [`"codes_textbook"`フォルダ内のファイル対応表](#anchor4)
+- [`"figures_textbook"`フォルダ内のファイル対応表](#anchor5)
 
 ***
 
@@ -19,13 +20,24 @@
 ## 各フォルダの内容
 - codes_textbook
   - テキスト内のサンプルコード
-- +figures_textbook
+- figures_textbook
   - テキスト内のグラフ作成用コード
   - このフォルダ内のコードは一部のファイルを除き、ほとんどが[GUILDA](https://lim.ishizaki-lab.jp/guilda)を用いて作成されています。
 
 ***
 
 <a id="anchor3"></a>
+## 各プログラムの実行方法
+- codes_textbook フォルダ内のプログラムの実行
+  - コマンドウィンドウにて `exe_codes_textbook` を実行します
+  - [`"codes_textbook"`フォルダ内のファイル対応表](#anchor4)を参考にして、実行したいプログラムに対応する例の番号を入力してください
+  - プログラムが実行され、エディターに該当プログラムが開かれます
+- codes_textbook フォルダ内のプログラムの実行
+  - コマンドウィンドウにて `exe_figures_textbook` を実行します
+  - [`"figures_textbook"`フォルダ内のファイル対応表](#anchor5)を参考にして、生成したいグラフに対応する例や節の番号を入力してください
+  - プログラムが実行され、グラフが生成され、エディターに該当プログラムが開かれます
+
+<a id="anchor4"></a>
 ## __`"codes_textbook"`フォルダ内のファイル対応表__
 
 |フォルダ名|ファイル名|電力テキスト内のプログラム番号|
@@ -111,8 +123,8 @@
 
 <br>
 
-<a id="anchor4"></a>
-## __`"+figures_textbook"`フォルダ内のファイル対応表__
+<a id="anchor5"></a>
+## __`"figures_textbook"`フォルダ内のファイル対応表__
 
 #### ネットワーク定義用ファイル`network_example3bus.m`
 
