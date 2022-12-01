@@ -1,17 +1,32 @@
 # textbook
 
+## 目次
+- [本リポジトリの概要](#anchor1)
+- [各フォルダの内容](#anchor2)
+- [`"codes_textbook"`フォルダ内のファイル対応表](#anchor3)
+- [`"+figures_textbook"`フォルダ内のファイル対応表](#anchor4)
+
+***
+
+<a id="anchor1"></a>
+## 本リポジトリの概要
+
 本リポジトリは関連参考文献([URL](https://www.coronasha.co.jp/np/isbn/9784339033847/))で扱うサンプルコードおよび、グラフ作成に用いたコードをまとめています。
 
+***
+
+<a id="anchor2"></a>
 ## 各フォルダの内容
-- code_textbook
+- codes_textbook
   - テキスト内のサンプルコード
-- figure_textbook
+- +figures_textbook
   - テキスト内のグラフ作成用コード
   - このフォルダ内のコードは一部のファイルを除き、ほとんどが[GUILDA](https://lim.ishizaki-lab.jp/guilda)を用いて作成されています。
 
 ***
 
-## __`"code_textbook"`フォルダ内のファイル対応表__
+<a id="anchor3"></a>
+## __`"codes_textbook"`フォルダ内のファイル対応表__
 
 |フォルダ名|ファイル名|電力テキスト内のプログラム番号|
 |:----|:----|:----|
@@ -96,7 +111,8 @@
 
 <br>
 
-## __`"figure_textbook"`フォルダ内のファイル対応表__
+<a id="anchor4"></a>
+## __`"+figures_textbook"`フォルダ内のファイル対応表__
 
 #### ネットワーク定義用ファイル`network_example3bus.m`
 
