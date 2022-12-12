@@ -1,10 +1,11 @@
 function example_5_3()
 
     fig = figure('position',[100,100,950,300]);
+
+    %電力系統モデルを定義(引数の設定内容はREADMEを参照)
     net = network_example3bus('flow'     ,2,...
                           'comp2'   ,'L_power',...
-                          'lossless',{'br12','br23'}...
-                          );
+                          'lossless',{'br12','br23'});
 
 
     %PIコントローラを母線1,3の発電機に付加
@@ -70,8 +71,6 @@ function [W,WF,WG,Wxi] = storage_func(out,net)
     V_st     = tools.vcellfun(@(bus) bus(end,1)+1j*bus(end,2), out.V);
     I_st     = tools.vcellfun(@(bus) bus(end,1)+1j*bus(end,2), out.I);
     PQ_st    = V_st .* conj(I_st);
-    %V_st  = tools.vcellfun(@(bus) bus.V_equilibrium, net.a_bus);
-    %PQ_st    = tools.vcellfun(@(bus) bus.V_equilibrium * conj(bus.I_equilibrium), net.a_bus);
     Vabs_st  = abs(V_st);
     Vangle_st= angle(V_st);
     P_st     = real(PQ_st);
@@ -159,7 +158,6 @@ function [W,WF,WG,Wxi] = storage_func(out,net)
     
     Wplot = @(Wdata,lintype,color) plot(out.t,Wdata,lintype,'LineWidth',2,'Color',color);
     
-
 
     hold on 
     Wplot(W,'.','k')

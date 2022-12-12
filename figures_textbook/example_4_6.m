@@ -11,31 +11,25 @@ function func(subFig)
     n = 3;
     omega0 = 120*pi;
     
+    %アドミタンス行列の導出
     y12 = 1.3652 - 1j*11.6041;
     y32 = 1.9422 - 1j*10.5107;
-    
     Y = 1*[y12, -y12, 0;
         -y12, y12+y32, -y32;
         0, -y32, y32];
     
-    Yre = real(Y);
-    Yim = imag(Y);
-    
-    
     switch subFig
         case {'a','b'}
-            Yre = Yre;
-            Yim = Yim;
+            Yre = real(Y);
+            Yim = imag(Y);
         case {'c','d'}
-            Yre = Yre / 100;
-            Yim = Yim / 100;
+            Yre = real(Y) / 100;
+            Yim = imag(Y) / 100;
     end
         
+    %発電機モデルのパラメータを設定
     Xq = diag([0.936; 0.911; 0.667]);
     Xd = diag([1.569; 1.651; 1.220]);
-    
-    E =[1.4363; 1.8095; 1.1030];
-    
     M = diag([100; 18; 12]);
     switch subFig
         case {'a','c'}
@@ -44,6 +38,9 @@ function func(subFig)
             D = 0.01*diag([10; 10; 10]);
     end
     T = diag([5.14; 5.90; 8.97]);
+
+
+    E =[1.4363; 1.8095; 1.1030];
     
     thar1s = [];
     thar2s = [];
@@ -60,6 +57,7 @@ function func(subFig)
     thar1uci = [];
     thar2uci = [];
     
+    %θ1とθ2の各値におけるシステムの安定性を評価
     for theta_1 = 0:0.01:1
         for theta_2 = 0:0.05:5
 
@@ -132,14 +130,14 @@ function func(subFig)
         end
     end
     
+
+    %解析結果をプロット
     plot(thar1s,thar2s,'ob','MarkerFaceColor','b','MarkerSize',6);
     hold on;
     grid on;
-    
     plot(thar1uc,thar2uc,'or','MarkerSize',6);
     plot(thar1uci,thar2uci,'om','MarkerSize',9);
     plot(thar1ucs,thar2ucs,'xc','MarkerSize',9);
-
     xlabel('\theta_1')
     ylabel('\theta_2')
 end

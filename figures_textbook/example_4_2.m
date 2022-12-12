@@ -10,12 +10,11 @@ function example_4_2()
 
 net = network_example3bus('flow'     ,0,...
                           'comp2'   ,'Gen_1axis',...
-                          'lossless',{}...
-                          );
+                          'lossless',{});                                                           %ネットワークの定義(引数の内容はREADMEを参照)
 
 x_init = net.x_equilibrium;
-x_init(1) = x_init(1) + pi/6;                                                                       %bus1の周波数偏差の初期値(平衡点)を+pi/6
-x_init(3) = x_init(3) + 0.1;                                                                        %bus1の内部電圧の初期値(平衡点)を+0.1
+x_init(1) = x_init(1) + pi/6;                                                                       %bus1の周波数偏差の初期値を(平衡点)+pi/6にセット
+x_init(3) = x_init(3) + 0.1;                                                                        %bus1の内部電圧の初期値を(平衡点)+0.1にセット
 out = net.simulate([0, 30], 'x0_sys', x_init, 'linear', false);                                     %0から30秒まで 初期値=x_init 
 
 a_color = {'b', 'k', 'r'};
